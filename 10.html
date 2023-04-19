@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입 및 로그인</title>
+</head>
+<body>
+    <h1>회원가입 및 로그인</h1>
+    <form action="/signup" method="POST">
+        <h2>회원가입</h2>
+        <label for="email">이메일</label>
+        <input type="email" name="email" id="email" required>
+        <br>
+        <label for="password">비밀번호</label>
+        <input type="password" name="password" id="password" required>
+        <br>
+        <label for="confirm_password">비밀번호 확인</label>
+        <input type="password" name="confirm_password" id="confirm_password" required>
+        <br>
+        <input type="submit" value="회원가입">
+    </form>
+    
+    <form action="/login" method="POST">
+        <h2>로그인</h2>
+        <label for="email">이메일</label>
+        <input type="email" name="email" id="email" required>
+        <br>
+        <label for="password">비밀번호</label>
+        <input type="password" name="password" id="password" required>
+        <br>
+        <input type="submit" value="로그인">
+    </form>
+    
+    <form action="/search" method="GET">
+        <h2>게시글 검색</h2>
+        <label for="search_query">검색어</label>
+        <input type="text" name="search_query" id="search_query" required>
+        <br>
+        <input type="submit" value="검색">
+    </form>
+</body>
+</html>
